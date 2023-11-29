@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Vollkorn+SC:wght@400;600;700&display=swap");
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Vollkorn SC", serif;
+    margin: 0;
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+@media screen and (max-width:767px) {
+    .header {
+        font-size: 18px;
+    }
+    .header__list {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    .cards__title{
+        font-size: 22px;
+        padding: 1rem 0;
+    }
+    .container{
+        grid-template-columns: repeat(auto-fit, 180px);
+        row-gap: 20px;
+    }
+    .sidebar{
+        min-width: 160px;
+        padding: 5px;
+    }
+    .sidebar__title{
+        font-size: 18px;
+    }
+    .filter__btn{
+        font-size: 14px;
+        line-height: 22px;
+        &:hover {
+            letter-spacing: 1.5px;
+        }
+    }
+    .card {
+        width: 180px;
+        min-height: 328px;
+        &__top {
+            flex: 0 0 180px;
+        }
+        &__title {
+            font-size: 14px;
+            min-height: 54px;
+            margin-bottom: 5px;
+        }
+        &__rating {
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+        &__bottom {
+            margin: 0 5px 10px 5px;
+        }
+        &__price {
+            font-size: 16px;
+        }
+        &__btn {
+            padding: 5px 28px 0;
+        }
+    }
+    footer p {
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width:1023px) {
+    .header {
+        font-size: 20px;
+    }
+    .cards{
+        width: 568px;
+    }
+    .cards__title{
+        font-size: 24px;
+        padding: 1rem 0;
+    }
+    .container{
+        grid-template-columns: repeat(auto-fit, 220px);
+    }
+    .sidebar{
+        width: 200px;
+    }
+    .sidebar__title{
+        font-size: 20px;
+    }
+    .filter__btn{
+        font-size: 16px;
+        line-height: 22px;
+        &:hover {
+            letter-spacing: 1.5px;
+        }
+    }
+    .card {
+        width: 220px;
+        min-height: 335px;
+        &__top {
+            flex: 0 0 190px;
+        }
+        &__title {
+            font-size: 16px;
+            min-height: 54px;
+            margin-bottom: 5px;
+        }
+        &__rating {
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+        &__bottom {
+            margin: 0 5px 10px 5px;
+        }
+        &__price {
+            font-size: 18px;
+            line-height: 36px;
+        }
+        &__btn {
+            padding: 5px 28px 0;
+        }
+    }
+    footer p {
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width:1024px) and (max-width:1439px){
+    .cards{
+        width: 734px;
+    }
+    .filter__btn{
+        font-size: 16px;
+        line-height: 22px;
+    }
+}

@@ -1,0 +1,37 @@
+.header {
+	background: #4b4bb4;
+	box-shadow: 0px 2px 20px rgba(21, 24, 36, 0.15993);
+	font-size: 26px;
+	&__wrapper {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		height: 70px;
+        margin: 0 3vw;
+	}
+	&__logo {
+		color: #ffffff;
+		text-decoration: none;
+		margin-bottom: 0;
+	}
+	&__logo:hover, &__logo:focus, &__logo:active{
+		opacity: 0.75;
+		color: #fff;
+	}
+	&__list {
+		display: flex;
+		margin: auto;
+	}
+	&__item {
+		margin-left: 2em;
+        list-style: none;
+	}
+	&__link {
+		text-decoration: none;
+		color: #ffffff;
+	}
+	&__link:hover, &__link:focus, &__link:active {
+		opacity: 0.75;
+		color: #fff;
+	}
+}
